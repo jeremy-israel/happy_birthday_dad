@@ -6,8 +6,8 @@
 #   movies = Movie.create([{ name: 'Star Wars' }, { name: 'Lord of the Rings' }])
 #   Character.create(name: 'Luke', movie: movies.first)
 
-Question.all.each do { |q| q.destroy }
-QuestionChoice.all.each do { |qc| qc.destroy }
+Question.all.each { |q| q.destroy }
+QuestionChoice.all.each { |qc| qc.destroy }
 
 q = Question.create(text: "Quelle est la couleur du cheval blanc d'Henri IV ?")
 qc = QuestionChoice.new(text: "Blanc cassé", msg_if_chosen: "T'es sur la bonne voie ;-)")
