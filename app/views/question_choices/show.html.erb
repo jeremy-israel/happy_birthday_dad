@@ -8,7 +8,7 @@
       <%= link_to "Voir Cadeau", cadeau_path, class: "btn btn-success" %>
     <% end %>
   <% else %>
-    <%= link_to "Retourner à la question #{@question_choice.question.id}", question_path(@question_choice.question), class: "btn btn-danger" %>
+    <%= link_to "Retourner à la question #{@question_choice.question.get_question_number}", question_path(@question_choice.question), class: "btn btn-danger" %>
   <% end %>
 </div>
 
