@@ -1,0 +1,10 @@
+<div class="container text-center">
+  <p><%= @question_choice.msg_if_chosen %></p>
+
+  <% if @question_choice.question.next %>
+    <%= link_to "Question suivante", question_path(@question_choice.question.next), class: "btn btn-primary "%>
+  <% else %>
+    <%= link_to "Tu as gagné ton cadeau ;-)", cadeau_path, class: "btn btn-primary" %>
+  <% end %>
+</div>
+
