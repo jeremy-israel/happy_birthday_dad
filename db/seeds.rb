@@ -7,23 +7,69 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 
 q = Question.create(text: "Quelle est la couleur du cheval blanc d'Henri IV ?")
-qc = QuestionChoice.new(text: "blanc cassé", msg_if_chosen: "T'es sur la bonne voie ;-)")
+qc = QuestionChoice.new(text: "Blanc cassé", msg_if_chosen: "T'es sur la bonne voie ;-)")
 qc.question = q
 qc.save!
-qc = QuestionChoice.new(text: "noir", msg_if_chosen: "Faut dormir la nuit :-)")
+qc = QuestionChoice.new(text: "Noir", msg_if_chosen: "Faut dormir la nuit :-)")
+qc.question = q
+qc.save!
+qc = QuestionChoice.new(text: "Blanc", msg_if_chosen: "Bravo !", is_right_choice: true)
 qc.question = q
 qc.save!
 
 q = Question.create(text: "Dans quelle ville européenne ton fils Jérémy n'est-il jamais allé ?")
-qc = QuestionChoice.new(text: "budapest", msg_if_chosen: "Perdu ;-)")
+qc = QuestionChoice.new(text: "Budapest", msg_if_chosen: "Perdu ;-)")
 qc.question = q
 qc.save!
-qc = QuestionChoice.new(text: "madrid", msg_if_chosen: "Perdu ;-)")
+qc = QuestionChoice.new(text: "Madrid", msg_if_chosen: "Perdu ;-)")
 qc.question = q
 qc.save!
-qc = QuestionChoice.new(text: "barcelone", msg_if_chosen: "Perdu :-)")
+qc = QuestionChoice.new(text: "Barcelone", msg_if_chosen: "Perdu :-)")
 qc.question = q
 qc.save!
-qc = QuestionChoice.new(text: "sophia", msg_if_chosen: "Gagné !!")
+qc = QuestionChoice.new(text: "Sophia", msg_if_chosen: "Gagné !!", is_right_choice: true)
+qc.question = q
+qc.save!
+
+q = Question.create(text: "Dans quelle ville Benjamin a-t-il déjà fait caca dans une baignoire ?")
+qc = QuestionChoice.new(text: "Budapest", msg_if_chosen: "Perdu ;-)")
+qc.question = q
+qc.save!
+qc = QuestionChoice.new(text: "Madrid", msg_if_chosen: "Perdu ;-)")
+qc.question = q
+qc.save!
+qc = QuestionChoice.new(text: "Barcelone", msg_if_chosen: "Perdu :-)")
+qc.question = q
+qc.save!
+qc = QuestionChoice.new(text: "Valmorel", msg_if_chosen: "Gagné !!", is_right_choice: true)
+qc.question = q
+qc.save!
+
+
+q = Question.create(text: "Quelle génération de processeur se trouvait dans l'ordinateur offert suite à ma Bar Mitzvah ?")
+qc = QuestionChoice.new(text: "Intel Pentium", msg_if_chosen: "Bah alors, on a déjà alzheimer ? ;-)")
+qc.question = q
+qc.save!
+qc = QuestionChoice.new(text: "Intel Pentium 2", msg_if_chosen: "Bah alors, on a déjà alzheimer ? ;-)")
+qc.question = q
+qc.save!
+qc = QuestionChoice.new(text: "Intel Pentium 3", msg_if_chosen: "Gagné ;-) Il était à 450Mhz overclocké à 504Mhz pour la petite histoire ;-)", is_right_choice: true)
+qc.question = q
+qc.save!
+qc = QuestionChoice.new(text: "AMD Athlon x64", msg_if_chosen: "Bien essayé...")
+qc.question = q
+qc.save!
+
+q = Question.create(text: "Quel est le language de programmation utilisé pour faire ce site ?")
+qc = QuestionChoice.new(text: "Javascript", msg_if_chosen: "Perdu :-)")
+qc.question = q
+qc.save!
+qc = QuestionChoice.new(text: "Ruby on rails", msg_if_chosen: "Bravo :D", is_right_choice: true)
+qc.question = q
+qc.save!
+qc = QuestionChoice.new(text: "Ruby on line", msg_if_chosen: "C'était presque ça.... c'était Ruby on rails !")
+qc.question = q
+qc.save!
+qc = QuestionChoice.new(text: "Diamond xPro 3", msg_if_chosen: "LOL...as-t-on avis ?")
 qc.question = q
 qc.save!

@@ -5,6 +5,6 @@
   </p>
   <%= simple_form_for [@question, @question_answer] do |f| %>
     <%= f.input :question_choice_id, collection: @question.question_choices, as: :radio_buttons %>
-    <%= f.submit value: "Valider" %>
+    <%= f.submit value: "Valider", class: "btn btn-primary" %>
   <% end %>
 </div>
