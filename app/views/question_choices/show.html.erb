@@ -1,3 +1,10 @@
+<% if @question_choice.is_right_choice %>
+  <div class="banner" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url('http://res.cloudinary.com/jtb360/image/upload/v1479639622/gagn%C3%A9_tud3hm.jpg');">
+<% else %>
+    <div class="banner" style="background-image: linear-gradient(135deg, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0.2) 50%), url('http://res.cloudinary.com/jtb360/image/upload/v1479602366/bougies_cbismv.png');">
+<% end %>
+
+
 <div class="container text-center">
   <h1><%= @question_choice.msg_if_chosen %></h1>
   <% if @question_choice.is_right_choice %>
@@ -12,3 +19,4 @@
   <% end %>
 </div>
 
+</div>

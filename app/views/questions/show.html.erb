@@ -5,11 +5,13 @@
   <p class="text-center">
     <%= @question.text %>
   </p>
-  <div class="my-form">
-    <%= simple_form_for [@question, @question_answer] do |f| %>
-      <%= f.input :question_choice_id,label: "", collection: @question.question_choices, as: :radio_buttons %>
-      <%= f.submit value: "Valider", class: "btn btn-primary" %>
-    <% end %>
+  <div class="row">
+    <div class="col-xs-8 col-md-2 col-xs-offset-2 col-md-offset-5">
+      <%= simple_form_for [@question, @question_answer] do |f| %>
+        <%= f.input :question_choice_id,label: "", collection: @question.question_choices, as: :radio_buttons %>
+        <%= f.submit value: "Valider", class: "btn btn-primary" %>
+      <% end %>
+    </div>
   </div>
 </div>
 

@@ -76,3 +76,32 @@ qc.save!
 qc = QuestionChoice.new(text: "Diamond xPro 3", msg_if_chosen: "LOL...as-t-on avis ?")
 qc.question = q
 qc.save!
+
+
+q = Question.create(text: "Quel est le deuxième prénom de Jérémy ?")
+qc = QuestionChoice.new(text: "Edouard", msg_if_chosen: "Perdu :-)")
+qc.question = q
+qc.save!
+qc = QuestionChoice.new(text: "Mohamed", msg_if_chosen: "Pas loin")
+qc.question = q
+qc.save!
+qc = QuestionChoice.new(text: "Jean", msg_if_chosen: "Perdu !")
+qc.question = q
+qc.save!
+qc = QuestionChoice.new(text: "Michel", msg_if_chosen: "Qui a choisi ce prénom ? En tout cas, bonne réponse ;-)", is_right_choice: true)
+qc.question = q
+qc.save!
+
+q = Question.create(text: "Quel est le fruit préféré de Jérémy ?")
+qc = QuestionChoice.new(text: "Fraise", msg_if_chosen: "J'adore ça mais c'est pas mon préféré :-)")
+qc.question = q
+qc.save!
+qc = QuestionChoice.new(text: "Framboise", msg_if_chosen: "J'adore ça mais c'est pas mon préféré :-)")
+qc.question = q
+qc.save!
+qc = QuestionChoice.new(text: "Mangue", msg_if_chosen: "Exact ;-) Tu vas pouvoir m'en amener encore plus comme ça ;-)", is_right_choice: true)
+qc.question = q
+qc.save!
+qc = QuestionChoice.new(text: "Raisin", msg_if_chosen: "J'aime que les sans pépins, mais pas autant que...")
+qc.question = q
+qc.save!
