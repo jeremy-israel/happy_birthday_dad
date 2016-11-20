@@ -49,7 +49,7 @@ qc.question = q
 qc.save!
 
 
-q = Question.create(text: "Quelle génération de processeur se trouvait dans l'ordinateur offert suite à ma Bar Mitzvah ?")
+q = Question.create(text: "Quelle génération de processeur se trouvait dans l'ordinateur offert pour ma Bar Mitzvah ?")
 qc = QuestionChoice.new(text: "Intel Pentium", msg_if_chosen: "Bah alors, on a déjà alzheimer ? ;-)")
 qc.question = q
 qc.save!
